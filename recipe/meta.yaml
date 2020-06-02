@@ -10,7 +10,7 @@ source:
   sha256: 3c4208c97feb659c2a7c3c4eab5211c64a0c6daa78319108f8f4e1324e52a29e
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - ipyleaflet >=0.12.6
     - ipynb-py-convert
     - ipytree
-    - matplotlib
+    - matplotlib-base
     - mss
     - pillow
     - pyshp
