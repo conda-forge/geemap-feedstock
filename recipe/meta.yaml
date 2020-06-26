@@ -1,20 +1,20 @@
 {% set name = "geemap" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 835f3e289b93efc2c18bd5f31ad0839642bdfea616c4c4a9b87fe19d02c07f60
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 98db4dce349f602335d56e9be8cf40123faec7360e4dcea152ea544451b3ab29
 
 build:
   number: 0
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -47,11 +47,11 @@ test:
     - geemap --help
 
 about:
-  home: "https://github.com/giswqs/geemap"
+  home: https://github.com/giswqs/geemap
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package for interactive mapping using Google Earth Engine and ipyleaflet"
+  summary: A Python package for interactive mapping using Google Earth Engine and ipyleaflet
   doc_url: https://geemap.readthedocs.io
   dev_url: https://github.com/giswqs/geemap
 
