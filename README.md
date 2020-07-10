@@ -5,7 +5,7 @@ Home: https://github.com/giswqs/geemap
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python package for interactive mapping using Google Earth Engine and ipyleaflet
 
