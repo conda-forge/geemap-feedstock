@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.7.8" %}
+{% set version = "0.7.9" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f77c5fc2e521d384cf4f92d75dc152a2f8e18a1f632da704c07e8e8e27f1aa0a
+  sha256: c71d74ec5bea36255237214f883bda38cdc6a6f17b7284648011d39f89d73bab
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
     - click
     - colour
     - earthengine-api >=0.1.226
+    - ffmpeg-python
     - folium >=0.11.0
     - geeadd >=0.4.8
     - geocoder
