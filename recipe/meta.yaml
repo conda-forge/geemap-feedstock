@@ -34,10 +34,14 @@ requirements:
     - ipynb-py-convert
     - ipytree
     - matplotlib
+    - numpy
     - python-mss
+    - pandas
     - pillow
     - pyshp
     - python
+    - voila
+    - whitebox
 
 test:
   imports:
@@ -46,14 +50,16 @@ test:
     - geemap --help
 
 about:
-  home: https://github.com/giswqs/geemap
+  home: https://geemap.org
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: A Python package for interactive mapping using Google Earth Engine and ipyleaflet
-  doc_url: https://geemap.readthedocs.io
+  summary: Earth Engine Python API and interactive mapping
+  description: A Python package for interactive mapping with Google Earth Engine, ipyleaflet, and folium.
+  doc_url: https://geemap.org
   dev_url: https://github.com/giswqs/geemap
 
 extra:
   recipe-maintainers:
     - giswqs
+    - KMarkert
