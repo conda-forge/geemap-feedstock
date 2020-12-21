@@ -1,17 +1,19 @@
 About geemap
 ============
 
-Home: https://github.com/giswqs/geemap
+Home: https://geemap.org
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geemap-feedstock/blob/master/LICENSE.txt)
 
-Summary: A Python package for interactive mapping using Google Earth Engine and ipyleaflet
+Summary: Earth Engine Python API and interactive mapping
 
 Development: https://github.com/giswqs/geemap
 
-Documentation: https://geemap.readthedocs.io
+Documentation: https://geemap.org
+
+A Python package for interactive mapping with Google Earth Engine, ipyleaflet, and folium.
 
 Current build status
 ====================
@@ -118,5 +120,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@KMarkert](https://github.com/KMarkert/)
 * [@giswqs](https://github.com/giswqs/)
 
