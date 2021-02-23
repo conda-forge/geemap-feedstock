@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.8.10" %}
+{% set version = "0.8.11" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: fc9ff43a81065a6213084c637835934940bfdcd8fc5d69f6264438cbbf720d90
+  sha256: 487a6f5422a0fa8db7a2c6c04ff6520c4c6af9df0faaede560a2d9000203a503
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - folium >=0.11.0
     - geeadd >=0.4.8
     - geocoder
+    - googledrivedownloader
     - ipyevents
     - ipyfilechooser
     - ipyleaflet >=0.13.1
@@ -36,6 +37,7 @@ requirements:
     - ipytree
     - matplotlib
     - numpy
+    - python-box
     - python-mss
     - pandas
     - pillow
@@ -64,4 +66,3 @@ about:
 extra:
   recipe-maintainers:
     - giswqs
-    - KMarkert
