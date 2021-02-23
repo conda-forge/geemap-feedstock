@@ -120,6 +120,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@KMarkert](https://github.com/KMarkert/)
 * [@giswqs](https://github.com/giswqs/)
 
