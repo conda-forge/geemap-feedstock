@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.8.16" %}
+{% set version = "0.8.17" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: e449c4de7a2e258e3744ab99a4dc1fddff0b050687781f349d0e0bc08db9e41b
+  sha256: 9ad9fd9e830decb80580937aa6f7fd0a61d06b45922960e49ca9887c62f47586
 
 build:
   number: 0
@@ -19,20 +19,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.6
   run:
     - bqplot
     - click
     - colour
-    - earthengine-api >=0.1.226
+    - earthengine-api >=0.1.230
     - ffmpeg-python
     - folium >=0.11.0
-    - geeadd >=0.4.8
+    - geeadd >=0.5.1
     - geocoder
     - googledrivedownloader
     - ipyevents
     - ipyfilechooser
-    - ipyleaflet >=0.13.1
+    - ipyleaflet >=0.14.0
     - ipynb-py-convert
     - ipytree
     - matplotlib
@@ -41,7 +41,7 @@ requirements:
     - pillow
     - pycrs
     - pyshp
-    - python >=2.7
+    - python >=3.6
     - python-box
     - python-mss
     - voila
