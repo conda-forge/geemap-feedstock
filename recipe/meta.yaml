@@ -19,20 +19,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.6
   run:
     - bqplot
     - click
     - colour
-    - earthengine-api >=0.1.226
+    - earthengine-api >=0.1.230
     - ffmpeg-python
     - folium >=0.11.0
-    - geeadd >=0.4.8
+    - geeadd >=0.5.1
     - geocoder
     - googledrivedownloader
     - ipyevents
     - ipyfilechooser
-    - ipyleaflet >=0.13.1
+    - ipyleaflet >=0.14.0
     - ipynb-py-convert
     - ipytree
     - matplotlib
@@ -41,7 +41,7 @@ requirements:
     - pillow
     - pycrs
     - pyshp
-    - python >=2.7
+    - python >=3.6
     - python-box
     - python-mss
     - voila
