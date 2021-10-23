@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - bqplot
     - click
@@ -32,21 +32,25 @@ requirements:
     - geojson
     - googledrivedownloader
     - ipyevents
-    - ipyfilechooser
+    - ipyfilechooser >=0.6.0
     - ipyleaflet >=0.14.0
     - ipynb-py-convert
     - ipytree
+    - jupyterlab >=3.0.0
     - matplotlib
     - numpy
+    - owslib
     - pandas
     - pillow
     - pycrs
-    - pyshp
-    - python >=3.6
+    - pyshp >=2.1.3
+    - python >=3.7
     - python-box
     - python-mss
+    - sankee
     - voila
     - whiteboxgui
+    - xyzservices
 
 test:
   imports:
