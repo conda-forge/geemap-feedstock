@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9683a5eb9983df6920f85dc886cd6b6fa04b42a53d6e15936ff64935b7c81e8
+  sha256: b9905560e2712a263e265f5a627cea8ccda66b5bf4dd4304b617543405a73e3a
 
 build:
   number: 0
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - bqplot
     - click
@@ -32,21 +32,25 @@ requirements:
     - geojson
     - googledrivedownloader
     - ipyevents
-    - ipyfilechooser
+    - ipyfilechooser >=0.6.0
     - ipyleaflet >=0.14.0
     - ipynb-py-convert
     - ipytree
+    - jupyterlab >=3.0.0
     - matplotlib
     - numpy
+    - owslib
     - pandas
     - pillow
     - pycrs
-    - pyshp
-    - python >=3.6
+    - pyshp >=2.1.3
+    - python >=3.7
     - python-box
     - python-mss
+    - sankee
     - voila
     - whiteboxgui
+    - xyzservices
 
 test:
   imports:
