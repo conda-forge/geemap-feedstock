@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2d06edd42e666e562385e16dda34f1e1ef78c3c1992f2aeb50e5678935416fa
+  sha256: f19a49cab70c34d7442b1e70afedf4a6f05448d977fd610c73054749c1caa14c
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - googledrivedownloader
     - ipyevents
     - ipyfilechooser >=0.6.0
-    - ipyleaflet >=0.14.0
+    - ipyleaflet <=0.14.0
     - ipynb-py-convert
     - ipytree
     - jupyterlab >=3.0.0
