@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.10.2" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aeac8cce6d3a90ed413eb62d98803063153967bdffd6bc0a1ddfb4366386d8cc
+  sha256: 37ce7f37d2a075540f1b2ab964587263dedb2dcaab4ee725531c39181983736f
 
 build:
   number: 0
@@ -43,6 +43,7 @@ requirements:
     - palettable
     - pandas
     - pillow
+    - plotly
     - pycrs
     - pyshp >=2.1.3
     - python >=3.7
