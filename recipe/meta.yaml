@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 37ce7f37d2a075540f1b2ab964587263dedb2dcaab4ee725531c39181983736f
+  sha256: 3712a32ec0b07c58d75dc7fe4a5977c7aa688524e63ed74eb02737bf5bf347c6
 
 build:
   number: 0
@@ -31,9 +31,10 @@ requirements:
     - geocoder
     - geojson
     - googledrivedownloader
+    - here-map-widget-for-jupyter >=1.1.1
     - ipyevents
     - ipyfilechooser >=0.6.0
-    - ipyleaflet <=0.14.0
+    - ipyleaflet >=0.14.0
     - ipynb-py-convert
     - ipytree
     - jupyterlab >=3.0.0
