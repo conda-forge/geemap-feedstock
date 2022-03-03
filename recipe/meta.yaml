@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.11.5" %}
+{% set version = "0.11.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c85e160b3bd8790d0d8a5c1cbe01b5bef238a35b08fd93b0ac715e43f790a40a
+  sha256: 4c0f6e735f0d74224e3db062d2d8e2582af7045c5fa86406ec9b7ee908821e10
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - ee_extra >=0.0.10
     - ffmpeg-python
     - folium >=0.11.0
+    - gdown
     - geeadd >=0.5.1
     - geocoder
     - geojson
