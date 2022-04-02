@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.12.1" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 11d45d424f079ff708cee74124c69a8c82712451833870b2ac29e1acb12c091d
+  sha256: 8c3aaad4c6ca65c279d5b8b2cac1d3638c7cedeaabb08b729d3c07b5ccb5fbad
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - python >=3.7
   run:
     - bqplot
-    - click
     - colour
     - earthengine-api >=0.1.230
     - ee_extra >=0.0.10
@@ -32,28 +31,23 @@ requirements:
     - geeadd >=0.5.1
     - geocoder
     - geojson
-    - googledrivedownloader
-    - here-map-widget-for-jupyter >=1.1.1
+    - geopandas
+    - httplib2shim
     - ipyevents
     - ipyfilechooser >=0.6.0
     - ipyleaflet >=0.14.0
-    - ipynb-py-convert
     - ipytree
     - jupyterlab >=3.0.0
+    - localtileserver
     - matplotlib
     - numpy
-    - owslib
-    - palettable
     - pandas
     - pillow
-    - plotly
     - pycrs
     - pyshp >=2.1.3
     - python >=3.7
     - python-box
-    - python-mss
     - sankee
-    - voila
     - whiteboxgui >=0.6.0
     - xyzservices
 
@@ -61,7 +55,9 @@ test:
   imports:
     - geemap
   commands:
-    - geemap --help
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://geemap.org
