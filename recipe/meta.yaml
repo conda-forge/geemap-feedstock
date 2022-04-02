@@ -10,7 +10,7 @@ source:
   sha256: 8c3aaad4c6ca65c279d5b8b2cac1d3638c7cedeaabb08b729d3c07b5ccb5fbad
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -31,14 +31,12 @@ requirements:
     - geeadd >=0.5.1
     - geocoder
     - geojson
-    - geopandas
     - httplib2shim
     - ipyevents
     - ipyfilechooser >=0.6.0
     - ipyleaflet >=0.14.0
     - ipytree
     - jupyterlab >=3.0.0
-    - localtileserver
     - matplotlib
     - numpy
     - pandas
