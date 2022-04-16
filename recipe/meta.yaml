@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.13.1" %}
+{% set version = "0.13.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8c3aaad4c6ca65c279d5b8b2cac1d3638c7cedeaabb08b729d3c07b5ccb5fbad
+  sha256: 888b773c970e25d9504a59630b954dc0950efce027af2305de9af1a51cd77f49
 
 build:
   number: 1
@@ -23,7 +23,7 @@ requirements:
   run:
     - bqplot
     - colour
-    - earthengine-api >=0.1.230
+    - earthengine-api >=0.1.304
     - ee_extra >=0.0.10
     - ffmpeg-python
     - folium >=0.11.0
