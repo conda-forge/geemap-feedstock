@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.13.10" %}
+{% set version = "0.13.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc01966c8390a486f634c79cf5715271f6dc8c80ec9ffc099d3dfa592ad59352
+  sha256: 514670801f9122d59e435fab8fb5d148d4e5798d9bfe97293212efe4c2680cb5
 
 build:
   number: 0
