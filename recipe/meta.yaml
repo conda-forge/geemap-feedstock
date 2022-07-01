@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.14.2" %}
+{% set version = "0.14.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c73f12df674d20a28e30757249ee89bce972ed00711928acd3b2448bbf799ffa
+  sha256: 8f58126763775934570bcc878e25dea587416889c33b420d5d895d850306699b
 
 build:
   number: 0
@@ -45,6 +45,7 @@ requirements:
     - python >=3.7
     - python-box
     - sankee
+    - scooby
     - whiteboxgui >=0.6.0
     - xyzservices
 
