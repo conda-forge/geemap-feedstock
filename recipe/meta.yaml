@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.19.2" %}
+{% set version = "0.19.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56d0449a80f1e7458f8d42c541eb93da899ee3ac76869a7505fdd352337974e5
+  sha256: 774d5abd79ffa46395eba8421dfecd009edceff60081498f69f762c1c249b816
 
 build:
   number: 0
@@ -36,6 +36,7 @@ requirements:
     - ipyfilechooser >=0.6.0
     - ipyleaflet >=0.14.0
     - ipytree
+    - ipywidgets <8.0.0
     - jupyterlab >=3.0.0
     - matplotlib-base
     - numpy
