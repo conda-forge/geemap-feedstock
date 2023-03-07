@@ -1,11 +1,11 @@
-About geemap
-============
+About geemap-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geemap-feedstock/blob/main/LICENSE.txt)
 
 Home: https://geemap.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geemap-feedstock/blob/main/LICENSE.txt)
 
 Summary: Earth Engine Python API and interactive mapping
 
