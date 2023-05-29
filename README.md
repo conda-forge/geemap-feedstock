@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Earth Engine Python API and interactive mapping
 
-Development: https://github.com/giswqs/geemap
+Development: https://github.com/gee-community/geemap
 
 Documentation: https://geemap.org
 
