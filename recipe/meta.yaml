@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.20.7" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e1b267227836f3d2d2308f50a369563cc9f6caf9ca624245e85431ec4e92a4a5
+  sha256: 4aa96e628820df6ad7e83b9792fea9aab74d439e791f56af43f5a1903c88df3b
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
   run:
     - bqplot
     - colour
-    - earthengine-api >=0.1.316
+    - earthengine-api >=0.1.347
     - eerepr >=0.0.4
     - ee_extra >=0.0.10
     - ffmpeg-python
@@ -34,9 +34,9 @@ requirements:
     - geojson
     - ipyevents
     - ipyfilechooser >=0.6.0
-    - ipyleaflet >=0.14.0
+    - ipyleaflet 
     - ipytree
-    - ipywidgets <8.0.0
+    - ipywidgets 
     - jupyterlab >=3.0.0
     - matplotlib-base
     - numpy
@@ -68,7 +68,7 @@ about:
   summary: Earth Engine Python API and interactive mapping
   description: A Python package for interactive mapping with Google Earth Engine, ipyleaflet, and folium.
   doc_url: https://geemap.org
-  dev_url: https://github.com/giswqs/geemap
+  dev_url: https://github.com/gee-community/geemap
 
 extra:
   recipe-maintainers:
