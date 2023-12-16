@@ -10,7 +10,7 @@ source:
   sha256: 5fa3fe47188c503edfd065884bae94226ae7f4eb5de3e3a2c82aae028c10592e
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -37,7 +37,7 @@ requirements:
     - ipyleaflet
     - ipytree
     - ipywidgets
-    - jupyterlab <4.0
+    - jupyterlab
     - matplotlib-base
     - numpy
     - pandas
