@@ -10,7 +10,7 @@ source:
   sha256: 24ec6301c85cf276120336ed7d7a7d89ce918cfdaeebec7d61fa24eb467b6186
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - bqplot
     - colour
