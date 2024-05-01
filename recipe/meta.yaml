@@ -34,6 +34,7 @@ requirements:
     - geojson
     - ipyevents
     - ipyfilechooser >=0.6.0
+    - ipyleaflet >=0.17.0,<0.19.0
     - ipytree
     - ipywidgets
     - jupyterlab
@@ -50,8 +51,6 @@ requirements:
     - scooby
     - whiteboxgui >=0.6.0
     - xyzservices
-  run_constrained:
-    - ipyleaflet ==0.18.2
 
 test:
   imports:
