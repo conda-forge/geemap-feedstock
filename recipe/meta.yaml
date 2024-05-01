@@ -1,5 +1,5 @@
 {% set name = "geemap" %}
-{% set version = "0.32.0" %}
+{% set version = "0.32.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f591674b17443228ade902adb9385bed4919a537498ddccf6bc7f4ac61489e47
+  sha256: f3b16bc4943d80490b3addb109d5463423ea4da8d007ba0097f76eba337231cc
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -34,7 +34,7 @@ requirements:
     - geojson
     - ipyevents
     - ipyfilechooser >=0.6.0
-    - ipyleaflet >=0.17.0
+    - ipyleaflet >=0.17.0,<0.19.0
     - ipytree
     - ipywidgets
     - jupyterlab
