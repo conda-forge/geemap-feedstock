@@ -13,7 +13,7 @@ Development: https://github.com/gee-community/geemap
 
 Documentation: https://geemap.org
 
-A Python package for interactive mapping with Google Earth Engine, ipyleaflet, and folium.
+A Python package for interactive geospatial analysis and visualization with Google Earth Engine.
 
 Current build status
 ====================
