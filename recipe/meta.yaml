@@ -10,7 +10,7 @@ source:
   sha256: a247b78e1f8e3cd95f839a1bad7864145feed9b306176b537cfc9ea20c53e321
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -20,10 +20,11 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - bqplot
     - colour
-    - earthengine-api >=0.1.347
+    - earthengine-api >=1.0.0
     - eerepr >=0.0.4
     - ee_extra >=0.0.15
     - ffmpeg-python
