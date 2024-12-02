@@ -10,7 +10,7 @@ source:
   sha256: 98f3f17fb1d07a6fe43b06f03fb680e10517adfd96002184015a3d4fe92435d6
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -19,8 +19,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
     - setuptools
+    - python {{ python_min }}
   run:
     - bqplot
     - colour
@@ -46,7 +46,7 @@ requirements:
     - pycrs
     - pyperclip
     - pyshp >=2.1.3
-    - python >=3.8
+    - python >={{ python_min }}
     - python-box
     - sankee
     - scooby
@@ -60,6 +60,7 @@ test:
   #   - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://geemap.org
