@@ -11,7 +11,7 @@ source:
   sha256: fb5162290bb518116fc2b24bb676b687852707af4bb03a5311e59887fe1187e4
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geemap=geemap.cli:main
   noarch: python
@@ -57,8 +57,8 @@ requirements:
 test:
   imports:
     - geemap
-  # commands:
-  #   - pip check
+  commands:
+    - pip check
   requires:
     - pip
     - python {{ python_min }}
