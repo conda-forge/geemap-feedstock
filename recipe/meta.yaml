@@ -45,6 +45,7 @@ requirements:
     - numpy
     - pandas
     - pillow
+    - plotly
     - pycrs
     - pyperclip
     - pyshp >=2.1.3
