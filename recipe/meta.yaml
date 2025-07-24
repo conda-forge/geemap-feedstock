@@ -22,6 +22,7 @@ requirements:
     - pip
     - setuptools
     - python {{ python_min }}
+    - hatchling
   run:
     - bqplot
     - colour
