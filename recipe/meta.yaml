@@ -28,7 +28,7 @@ requirements:
     - anywidget
     - bqplot
     - colour
-    - earthengine-api >=1.5.12
+    - earthengine-api >=1.6.13
     - eerepr >=0.1.0
     - ffmpeg-python
     - folium >=0.17.0
