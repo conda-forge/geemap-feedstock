@@ -152,4 +152,5 @@ Feedstock Maintainers
 * [@giswqs](https://github.com/giswqs/)
 * [@jdbcode](https://github.com/jdbcode/)
 * [@naschmitz](https://github.com/naschmitz/)
+* [@schwehr](https://github.com/schwehr/)
 
