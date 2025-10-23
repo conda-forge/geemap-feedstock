@@ -1,6 +1,6 @@
 {% set name = "geemap" %}
 {% set version = "0.36.6" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,7 @@ requirements:
     - anywidget
     - bqplot
     - colour
-    - earthengine-api >=1.5.12
+    - earthengine-api >=1.6.13
     - eerepr >=0.1.0
     - ffmpeg-python
     - folium >=0.17.0
@@ -78,3 +78,4 @@ extra:
     - giswqs
     - jdbcode
     - naschmitz
+    - schwehr
