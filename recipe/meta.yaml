@@ -52,6 +52,7 @@ requirements:
     - python >={{ python_min }}
     - python-box
     - scooby
+    - xarray
     - xyzservices
 
 test:
