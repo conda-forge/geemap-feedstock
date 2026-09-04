@@ -53,6 +53,7 @@ requirements:
     - python-box
     - scooby
     - xarray
+    - xee >=0.1.0
     - xyzservices
 
 test:
